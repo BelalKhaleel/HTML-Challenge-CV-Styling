@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+#mobile-contact,
+#top-contact,
+#about-section,
+#main-skills,
+#other-skills {
+    display: none;
+}
+
+header {
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+.titles {
+    padding-left: 1.5%;
+    width: 65%;
+}
+
+.titles h1 {
+    margin: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.titles h2 {
+    display: none;
+}
+
+header img {
+    transform: translateY(48%) rotate(-30deg);
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#about-column {
+    display: flex;
+    width: 70%;
+    color: gray;
+    margin: 0;
+}
+
+.column-2,
+.column-1 {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin: 30px 0;
+
+}
+
+.subtitle {
+    width: 130px;
+    margin: 0;
+}
+
+.skills-cont,
+.experience,
+.hobbies {
+    width: calc(100% - 141px);
+    padding-left: 10px;
+    border-left: 1px solid black;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 18%;
+    padding: 10px;
+    background: cornflowerblue;
+    color: white;
+    margin: 0 5px;
+    margin-bottom: 10px;
+}
+
+.skill:nth-child(2):after {
+    content: "\22C6 \22C6 \22C6";
+    font-size: 22px;
+}
+
+.skill:nth-child(3)::after {
+    content: "\22C6 \22C6";
+    font-size: 22px;
+}
+
+.skill:nth-child(4)::after {
+    content: "\22C6 ";
+    font-size: 22px;
+}
+
+.skill.other span {
+    font-size: 12px;
+}
+
+.skill.other:nth-child(2):after {
+    content: "\22C6 \22C6 \22C6 \22C6 \22C6";
+    font-size: 12px;
+}
+
+.skill.other:nth-child(3)::after {
+    content: "\22C6 \22C6 \22C6";
+    font-size: 12px;
+}
+
+.skill.other:nth-child(4)::after {
+    content: "\22C6 \22C6 \22C6 \22C6";
+    font-size: 12px;
+}
+
+.experience-title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.experience-title p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: cornflowerblue;
+}
+
+.experience-title h6 {
+    margin: 0;
+    font-size: 16px;
+    color: gray;
+}
+
+li {
+    margin-left: 5%;
+}
+
+ul {
+    margin: 0;
+    padding-bottom: 6%;
+}
+
+.contact-me-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    width: 84%;
+    padding-left: 16%;
+}
+
+.cl {
+    font-size: 20px;
+    margin: 10px;
+    width: 100px;
+}
+
+.cl-email {
+    content: url("./email.png");
+}
+
+.cl-phone {
+    content: url("./phone.png");
+}
+
+.cl-git {
+    content: url("./github.png");
+}
+
+.cl-fb {
+    content: url("./fb.png");
+}
+
+@media screen and (max-width: 900px) {
+    header>img {
+        display: none;
+    }
+
+    .container,
+    .titles {
+        width: 90%;
+    }
+
+    #about-column {
+        width: 100%;
+    }
+
+
+    .column-2,
+    .column-1 {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .subtitle {
+        border-bottom: 1px solid;
+        margin: 20px 0;
+    }
+
+    .titles>p,
+    .column-1 p,
+    .column-2 p {
+        font-size: 14px;
+    }
+
+    .skills-cont,
+    .experience,
+    .hobbies {
+        width: 100%;
+        padding-left: 0;
+        border-left: 0;
+    }
+
+    .hobbies {
+        margin-left: 20px;
+    }
+
+    .skill {
+        width: 24%;
+        min-width: 70px;
+        padding: 5px;
+    }
+
+    .skill>span {
+        font-size: 12px;
+    }
+
+    .experience-title h6,
+    .experience-title p {
+        font-size: 12px;
+    }
+
+    .contact-me-logos{
+        width: 100%;
+        padding-left: 0;
+    }
+
+    }
