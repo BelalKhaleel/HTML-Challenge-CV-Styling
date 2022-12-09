@@ -1,0 +1,210 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #212b2d;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    float: unset;
+
+
+}
+
+.hero {
+    width: calc(100% - 60px);
+    padding: 30px;
+    height: 400px;
+    background-image: url("image.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero h1 {
+    width: 100%;
+    color: white;
+    font-size: 50px;
+    margin: 50px 0;
+}
+
+.hero p {
+    width: 100%;
+    color: white;
+    font-size: 24px;
+}
+
+nav {
+    height: 20px;
+    width: 100%;
+    background-color: #333d3f;
+    color: white;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+}
+
+nav a {
+    border-right: 2px solid white;
+    padding: 0 6%;
+    height: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+nav a:last-child {
+    border-right: 0;
+
+}
+
+.section-wrapper {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 50px;
+    border-bottom: 1px solid white;
+    padding-bottom: 30px;
+}
+
+.side-section {
+    width: calc(30% - 20px);
+    padding-right: 20px;
+    float: left;
+}
+
+.main-menu h2,
+ul {
+    width: 100%;
+    color: white;
+}
+
+.block h2,
+p {
+    width: 100%;
+    color: white;
+}
+
+.block p {
+    font-size: 14px;
+}
+
+
+
+.main-section {
+    width: 70%;
+    float: right;
+
+}
+
+.gallery-section {
+    width: 100%;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.gallery-section h2 {
+    width: 100%;
+    margin: 0;
+    padding: 15px 0;
+    border-bottom: 1px solid white;
+}
+
+.gallery-section p {
+    font-size: 14px;
+}
+
+.subscription-section {
+    width: calc(50% - 20px);
+    color: white;
+    padding-right: 20px;
+    border-right: 1px solid white;
+    float: left;
+}
+
+.subscription-section h2 {
+    width: 100%;
+    margin: 0;
+    padding: 15px 0;
+
+}
+
+.subscription-section p {
+    font-size: 14px;
+}
+
+.subscription-section button {
+    width: 90px;
+    height: 40px;
+    color: white;
+    background-color: gray;
+    border: 0;
+    margin-top: 20px;
+}
+
+.other-section {
+    width: 45%;
+    color: white;
+    padding-right: 20px;
+    float: right;
+}
+
+.other-section h2 {
+    width: 100%;
+    margin: 0;
+    padding: 15px 0;
+
+}
+
+.other-section p {
+    font-size: 14px;
+}
+
+.other-section button {
+    width: 90px;
+    height: 40px;
+    color: white;
+    background-color: gray;
+    border: 0;
+    margin-top: 20px;
+}
+
+.contact-us {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.contact-us h2 {
+    width: 100%;
+    color: white;
+}
+
+.form-control {
+    width: 100%;
+    color: white;
+    margin-top: 20px;
+}
+
+.form-control label{
+    width: 100%;
+    padding-bottom: 15px;
+    display: block;
+  
+}
+.form-control input[type="text"],  .contact-us .submit,  .form-control textarea{
+    width: 100%;
+    padding: 0;
+
+}
+.form-control textarea{
+    height: 150px;
+}
+.suggestion{
+    width: 100%;
+    display: flex;
+    padding: 15px 0;
+}
+.suggestion label{
+    color: white;
+    padding-right: 30px;
+}
